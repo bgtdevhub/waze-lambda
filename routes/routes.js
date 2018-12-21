@@ -33,7 +33,7 @@ const convertToDateTime = x => {
   // i.e 11/10/2018, 3:58:39 PM -> 11/10/2018 3:58:39 PM
   return new Date(x).toLocaleString().replace(',', '');
 };
-const durationPreserved = 259200; // 72 hours worth of data
+const durationPreserved = 86400; // 24 hours worth of data
 
 const getData = type =>
   new Promise((resolve, reject) => {
